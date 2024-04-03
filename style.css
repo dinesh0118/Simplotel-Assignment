@@ -1,0 +1,248 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right,#fffba1, #e8a7e2);
+}
+
+.navbar {
+    background-color: #f97272;
+    padding: 7px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar a {
+    color: black;
+    text-align: center;
+    padding: 5px 10px;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+    white-space: nowrap; 
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#img {
+    width: 40px;
+    height: 80%; 
+}
+
+.content {
+    display: flex;
+    height: 100%;
+}
+
+.text {
+    flex: 1;
+    padding: 20px;
+}
+#head{
+    font-family: "Maven Pro", sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    margin-top: 150px;
+    margin-left: 100px;
+}
+#matter{
+    margin-left: 100px;
+    line-height: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+.image {
+    flex: 1;
+}
+
+.image img {
+    width: calc(100% + 5px);
+    height: 142%;
+    object-fit: cover;
+    margin-right: -5px;
+    margin-left: -5px;
+}
+button {
+    background-color: #f97272;
+    color: white;
+    padding: 15px 80px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    margin-left: 123px;
+    margin-bottom: 200px;
+    font-family: "Maven Pro", sans-serif;
+}
+*{
+    box-sizing: border-box;
+}
+.column{
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}
+.grid-wrapper::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.grid-wrapper {
+    display: flex;
+    margin-top: 160px;
+}
+
+.column {
+    width: 260px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+}
+.column img:first-child {
+    margin-bottom: 10px;
+}
+.column img {
+    width: 250px;
+    height: 30%;
+    max-height: 23.8%;
+    object-fit: cover;
+    margin-bottom: 5px;
+}
+#home {
+    padding: 10px;
+}
+#home .column:nth-child(2) {
+    width: 250px;
+    height: 100%;
+    margin-left: 20px; 
+}
+#lorem {
+    height: 250px;
+    width: 36%;
+    margin-left: 5vw;
+    margin-top: 11vh; 
+    background-color: #f97272;
+    font-family: "Maven Pro", sans-serif;
+    line-height: 20px;
+    padding-top: 1.5%; 
+    padding-left: 2.8vw; 
+    font-size: 1.8vw; 
+}
+#lorem span{
+    letter-spacing: 0;
+    font-size: 15px;
+}
+#button {
+    position: relative;
+    top: -1em;
+    right: 33%;
+    color: black;
+    padding: 15px 30px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+#button img{
+    position: relative;
+    top: 0.6em;
+    left: 5px;
+}
+@media (max-width: 768px) {
+    #lorem {
+        width: 80%; 
+        padding-left: 10%; 
+        font-size: 5vw;
+    }
+
+    #lorem span {
+        font-size: 2.5vw;
+    }
+
+    #button {
+        right: 10%;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(to right,#fffba1, #e8a7e2);
+    }
+    .navbar {
+        padding-left: 50px;
+        padding-right: 50px;
+
+    }
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .navbar a {
+        padding: 3px 0;
+        margin: 3px 0;
+    }
+
+    #head {
+        margin-left: 40px;
+    }
+
+    #matter {
+        margin-left: 40px;
+        font-size: 18px;
+    }
+
+    .image img {
+        width: calc(100% + 10px);
+        height: 130%;
+        margin-left: -10px;
+    }
+
+    button {
+        margin-left: 40px;
+        margin-bottom: 50px;
+    }
+
+    .column {
+        width: 33.33%;
+        padding: 2%;
+        margin-left: 0;
+    }
+    #col img {
+        height: auto; /* Reset height */
+        max-height: fit-content; /* Remove max-height */
+    }
+
+    .column img {
+        width: 100%;
+        height: auto;
+        max-height: none;
+        margin-bottom: 2%;
+    }
+
+    #home .column:nth-child(2) {
+        width: 33.33%;
+        margin-left: 2px;
+    }
+
+    #lorem {
+        width: 70%;
+        margin-left: 10px;
+        margin-top: 8px;
+        padding-left: 5%;
+        font-size: 3vw;
+    }
+
+    #lorem span {
+        font-size: 2vw;
+    }
+
+    #button {
+        position: relative;
+        top: -0.5em;
+        right: 50px;
+        padding: 15px 15px;
+    }
+}
